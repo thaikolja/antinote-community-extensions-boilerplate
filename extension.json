@@ -1,0 +1,26 @@
+{
+  "name":            "exchange_rates",
+  "version":         "0.0.1",
+  "author":          "Kolja Nolte",
+  "description":     "Provides current exchange rates for various currencies.",
+  "license":         "MIT",
+  "category":        "Utilities",
+  "dataScope":       "none",
+  "endpoints":       [
+    "https://60797dd9460a6600174fbd2d.mockapi.io/location_url"
+  ],
+  "requiredAPIKeys": [],
+  "official":        false,
+  "commands":        [
+    {
+      "name":        "hello",
+      "description": "Insert a greeting. Optional name. The greeting word comes from the extension preference.",
+      "type":        "insert"
+    },
+    {
+      "name":        "rate",
+      "description": "rate description",
+      "type":        "insert"
+    }
+  ]
+}

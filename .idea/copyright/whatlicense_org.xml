@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="allowReplaceRegexp" value="Copyright" />
+    <option name="notice" value="@file         Antinote Extension&#10;@description  Boilerplate community extension for the macOS app Antinote.&#10;@author       Kolja Nolte &lt;kolja.nolte@gmail.com&gt;&#10;@copyright    &amp;#36;today.year (C) Kolja Nolte&#10;@see          https://www.kolja-nolte.com&#10;&#10;This program is free software; you can run, modify, and redistribute it under the GNU Affero&#10;General Public License v3 or later. All copies and derivative works must keep original copyright&#10;notices intact and preserve this license. Anyone interacting with modified versions over a computer&#10;network is entitled to receive the corresponding source code without added restrictions.&#10;&#10;@license      AGPL-3.0-or-later&#10;@see          https://www.gnu.org/licenses/agpl-3.0.html" />
+    <option name="myName" value="whatlicense.org" />
+  </copyright>
+</component>

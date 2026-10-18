@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "es2015",
+    "moduleDetection": "auto",
+    "lib": [
+      "ES2015"
+    ],
+    "types": [],
+    "strict": true,
+    "noEmitOnError": true,
+    "sourceMap": false,
+    "declaration": false,
+    "rootDir": ".",
+    "outDir": "."
+  },
+  "files":           [
+    "index.ts",
+    "antinote.d.ts"
+  ]
+}
