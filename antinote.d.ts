@@ -22,7 +22,7 @@
  * the extension as a script.
  */
 
-/**
+/** test
  * Describes the metadata Antinote uses when registering an extension.
  * These values are supplied to the Extension constructor and used by the
  * runtime to expose the extension to the user and to other extensions.
@@ -534,10 +534,10 @@ declare var TutorialCommand: {
 interface ReturnObject {
   /**
    * Final status of the operation.
-   */
-  status: 'success' | 'error';
+   *
+   status: 'success' | 'error';
 
-  /**
+   /**
    * User-facing message describing the outcome.
    */
   message: string;

@@ -9,14 +9,14 @@
 | `index.ts` | Edit this. |
 | `index.js` | Emitted by `tsc -p tsconfig.json`. Gitignored (`/index.js`). |
 | `index.test.ts` | Edit this. |
-| `index.test.js` | What `node index.test.js` runs. Gitignored (`/index.test.js`). `tsconfig.test.json` does not emit it. |
+| `index.test.js` | What `node index.test.js` runs. Gitignored (`/index.test.js`). Emitted by `tsc -p tsconfig.test.json`. |
 | `antinote.d.ts` | Ambient runtime types. Included by `tsconfig.json`. |
 | `test-env.d.ts` | Node `require`, `process`, `__dirname`, and `console` for the test type-check. |
 | `extension.json` | Manifest. Not compiled. |
 
 `tsconfig.json` targets ES2015, `module: es2015`, `strict`, `outDir` `.`, and lists `index.ts` plus `antinote.d.ts`. It has no DOM lib and no `@types/node`.
 
-`tsconfig.test.json` targets ES2020, `module: commonjs`, `noEmit: true`, and lists `index.test.ts` plus `test-env.d.ts`. `noImplicitAny` is off, so the small test helpers stay unannotated.
+`tsconfig.test.json` targets ES2020, `module: commonjs`, `outDir` `.`, and lists `index.test.ts` plus `test-env.d.ts`. It emits `index.test.js`. `noImplicitAny` is off, so the small test helpers stay unannotated. `module` stays `commonjs` so Node can run that file (`__dirname` and `require`).
 
 ## Checks
 
@@ -24,12 +24,13 @@
 tsc --noEmit -p tsconfig.json
 tsc --noEmit -p tsconfig.test.json
 tsc -p tsconfig.json
+tsc -p tsconfig.test.json
 node index.test.js
 ```
 
 The test installs a stand-in for `Extension`, `Command`, `Parameter`, `Preference`, `TutorialCommand`, `ReturnObject`, and `getExtensionPreference`, then evaluates `index.js` with `vm.runInThisContext`. It does not start Antinote.
 
-When you change `index.test.ts`, update `index.test.js` to match before running `node`. Nothing in the repo compiles the test file for you.
+The WebStorm file watcher compiles `index.ts` and `antinote.d.ts` with `tsconfig.json` into `index.js`, and `index.test.ts` and `test-env.d.ts` with `tsconfig.test.json` into `index.test.js`. Saving one source does not rewrite the other output.
 
 ## Comment style
 

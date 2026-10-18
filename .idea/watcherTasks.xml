@@ -2,21 +2,41 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="-p $ProjectFileDir$/tsconfig.json --pretty false" />
+      <option name="arguments" value="-p $ProjectFileDir$/tsconfig.json --pretty true" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" />
+      <option name="description" value="Emit index.ts to index.js. Does not run for index.test.ts." />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="ts" />
       <option name="immediateSync" value="true" />
-      <option name="name" value=".tsc -&gt; .js" />
-      <option name="output" value="$ProjectFileDir$/$FileNameWithoutExtension$.js" />
+      <option name="name" value="Compile index.ts" />
+      <option name="output" value="$ProjectFileDir$/index.js" />
       <option name="outputFilters">
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="tsc" />
       <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="scopeName" value="extension_sources" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="-p $ProjectFileDir$/tsconfig.test.json --pretty true" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Emit index.test.ts to index.test.js. Does not run for index.ts." />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="ts" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Compile index.test.ts" />
+      <option name="output" value="$ProjectFileDir$/index.test.js" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="tsc" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="extension_tests" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />

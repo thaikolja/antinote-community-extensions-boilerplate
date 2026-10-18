@@ -13,12 +13,12 @@
  * @license      AGPL-3.0-or-later
  * @see          https://www.gnu.org/licenses/agpl-3.0.html
  */
-
+console.log()
 /**
  * Node filesystem helpers used to load index.js and extension.json.
  */
 // @ts-ignore
-import fs from 'fs'
+import fs   from 'fs'
 
 /**
  * Node path helpers used to resolve sibling files next to this test.
@@ -30,7 +30,7 @@ import path from 'path'
  * Node vm helpers used to evaluate compiled index.js in the current context.
  */
 // @ts-ignore
-import vm from 'vm'
+import vm   from 'vm'
 
 /**
  * Groups related tests under a printed section title.
@@ -588,7 +588,7 @@ var metadata = JSON.parse(fs.readFileSync(path.join(__dirname, 'extension.json')
 /**
  * Suite: required extension.json fields and catalog constraints.
  */
-describe('my-extension metadata', function () {
+describe('my_extension metadata', function () {
   /**
    * Case: every field Antinote's validator requires is present and typed.
    */
@@ -596,7 +596,7 @@ describe('my-extension metadata', function () {
     /**
      * Extension id must be my-extension, matching index.js.
      */
-    expect(metadata.name).toBe('my-extension')
+    expect(metadata.name).toBe('my_extension')
 
     /**
      * Version must match the Extension constructor version.

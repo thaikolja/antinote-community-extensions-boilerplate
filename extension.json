@@ -1,14 +1,12 @@
 {
-  "name":            "my-extension",
+  "name":            "my_extension",
   "version":         "1.0.0",
   "author":          "Kolja Nolte",
   "description":     "my-extension inserts a greeting and opens the Antinote extensions guide.",
   "license":         "MIT",
   "category":        "Utilities",
   "dataScope":       "none",
-  "endpoints":       [
-    "https://60797dd9460a6600174fbd2d.mockapi.io/location_url"
-  ],
+  "endpoints":       [],
   "requiredAPIKeys": [],
   "official":        false,
   "commands":        [

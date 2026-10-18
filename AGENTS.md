@@ -22,10 +22,10 @@ Repository: https://github.com/thaikolja/antinote-community-extensions-boilerpla
 | `extension.json` | Metadata Antinote and the catalog validator read. |
 | `antinote.d.ts` | Ambient types for the Antinote runtime. Not a module. |
 | `index.test.ts` | Test source. |
-| `index.test.js` | Test file `node` runs. Gitignored. Keep it in sync with `index.test.ts`. |
+| `index.test.js` | What `node index.test.js` runs. Gitignored. Emitted by `tsc -p tsconfig.test.json`. |
 | `test-env.d.ts` | Node globals for the test typecheck. |
 | `tsconfig.json` | Emits `index.js`. |
-| `tsconfig.test.json` | Typecheck only (`noEmit`). |
+| `tsconfig.test.json` | Emits `index.test.js`. `module` is `commonjs`. |
 
 ## Rules
 
@@ -45,6 +45,7 @@ Repository: https://github.com/thaikolja/antinote-community-extensions-boilerpla
 tsc --noEmit -p tsconfig.json
 tsc --noEmit -p tsconfig.test.json
 tsc -p tsconfig.json
+tsc -p tsconfig.test.json
 node index.test.js
 ```
 

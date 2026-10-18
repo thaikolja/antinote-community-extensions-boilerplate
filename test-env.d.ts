@@ -80,6 +80,8 @@ interface TestRequire {
 
 /**
  * CommonJS `require` available when the test runs under Node.
+ *
+ * @var require Makes Node modules available to the test harness.
  */
 declare var require: TestRequire
 
