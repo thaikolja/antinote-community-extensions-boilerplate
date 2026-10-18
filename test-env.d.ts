@@ -1,6 +1,6 @@
 /*
  * @file         Antinote Extension
- * @description  Boilerplate community extension for the macOS app Antinote.
+ * @description  my-extension, a community extension for the macOS app Antinote.
  * @author       Kolja Nolte <kolja.nolte@gmail.com>
  * @copyright    2026 (C) Kolja Nolte
  * @see          https://www.kolja-nolte.com
@@ -80,6 +80,8 @@ interface TestRequire {
 
 /**
  * CommonJS `require` available when the test runs under Node.
+ *
+ * @var require Makes Node modules available to the test harness.
  */
 declare var require: TestRequire
 

@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "moduleDetection": "auto",
-    "lib": ["ES2020"],
-    "types": [],
-    "strict": true,
-    "noImplicitAny": false,
+    "target":                     "ES2020",
+    "module":                     "commonjs",
+    "moduleDetection":            "auto",
+    "lib":                        [
+      "ES2020"
+    ],
+    "types":                      [],
+    "strict":                     true,
+    "noImplicitAny":              false,
     "useUnknownInCatchVariables": false,
-    "noEmit": true,
-    "skipLibCheck": true
+    "noEmitOnError":              true,
+    "skipLibCheck":               true,
+    "rootDir":         ".",
+    "outDir":          "."
   },
-  "files": ["index.test.ts", "test-env.d.ts"]
+  "files":           [
+    "index.test.ts",
+    "test-env.d.ts"
+  ]
 }

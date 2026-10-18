@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIAssistantCustomInstructionsStorage">
+    <option name="instructions">
+      <map>
+        <entry key="AIAssistant.VCS.GenerateCommitMessage">
+          <value>
+            <AIAssistantStoredInstruction>
+              <option name="actionId" value="AIAssistant.VCS.GenerateCommitMessage" />
+              <option name="content" value="Avoid overly verbose descriptions or unnecessary details. Use Conventional Commits and list most important changes below title." />
+            </AIAssistantStoredInstruction>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -7,7 +21,19 @@
     <option name="selectedModelId" value="mai-code-1.1-flash" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19835a11-fe44-4936-aa61-76209a4c4571" name="Changes" comment="" />
+    <list default="true" id="19835a11-fe44-4936-aa61-76209a4c4571" name="Changes" comment="feat: rename extension to my_extension and update metadata&#10;&#10;- Changed extension name from `my-extension` to `my_extension`.&#10;- Cleared unused endpoints in extension metadata.&#10;- Reformatted tsconfig files for consistency.&#10;- Added documentation for `require` in test environment.">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOCUMENTATION/DEVELOPMENT.md" beforeDir="false" afterPath="$PROJECT_DIR$/DOCUMENTATION/DEVELOPMENT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antinote.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/antinote.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/extension.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.test.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.test.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +46,7 @@
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="17" />
+    <option name="cachedIndexableFilesCount" value="27" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -31,69 +57,92 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kolja Nolte &lt;kolja.nolte@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thaikolja&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/thaikolja/antinote-community-extensions-boilerplate.git&quot;,
+    &quot;accountId&quot;: &quot;e47629df-5fd8-48d0-bb71-e9da6b8e1e09&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="7.832339447600786E-119" />
-      <entry key="MS500" value="2.3920943222251122E-24" />
-      <entry key="S2" value="1.2436396935766047E-6" />
-      <entry key="S5" value="0.004344350093162649" />
-      <entry key="S10" value="0.06685680415636137" />
-      <entry key="S30" value="0.5597912899560477" />
-      <entry key="S60" value="1.2368213864861173" />
-      <entry key="M2" value="2.2305351570515146" />
-      <entry key="M5" value="5.079702291171721" />
-      <entry key="M10" value="11.695443471284047" />
-      <entry key="M15" value="18.63955275895078" />
-      <entry key="M30" value="37.88166287699861" />
-      <entry key="H1" value="63.17870141822709" />
-      <entry key="H2" value="85.65928664876782" />
-      <entry key="H4" value="100.98029712085055" />
-      <entry key="D1" value="116.53416440781368" />
-      <entry key="W1" value="119.49706117665575" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000059767153" />
+      <entry key="S2" value="1.0087925661548605" />
+      <entry key="S5" value="1.1505380402110925" />
+      <entry key="S10" value="1.38799231978584" />
+      <entry key="S30" value="1.7294895187112203" />
+      <entry key="S60" value="1.8674161368168103" />
+      <entry key="M2" value="2.1207308535211546" />
+      <entry key="M5" value="3.455243471357391" />
+      <entry key="M10" value="7.05092410786872" />
+      <entry key="M15" value="12.52327143845333" />
+      <entry key="M30" value="33.56145856699639" />
+      <entry key="H1" value="71.5107972757598" />
+      <entry key="H2" value="115.10960479037746" />
+      <entry key="H4" value="150.24322081115153" />
+      <entry key="D1" value="190.42621117521674" />
+      <entry key="W1" value="198.59671036138985" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000113265805497" />
-      <entry key="S2" value="1.103879798117233" />
-      <entry key="S5" value="1.4583821533917805" />
-      <entry key="S10" value="1.8777910034433045" />
-      <entry key="S30" value="2.675711366796077" />
-      <entry key="S60" value="3.1588848378419128" />
-      <entry key="M2" value="3.5201104052378094" />
-      <entry key="M5" value="4.114728951632678" />
-      <entry key="M10" value="5.7157415053112475" />
-      <entry key="M15" value="7.351153358510012" />
-      <entry key="M30" value="10.874112732441986" />
-      <entry key="H1" value="14.266105884003933" />
-      <entry key="H2" value="16.739339985606385" />
-      <entry key="H4" value="18.25425369507635" />
-      <entry key="D1" value="19.691300537354046" />
-      <entry key="W1" value="19.955441158060495" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.37725560267668E-162" />
+      <entry key="S5" value="2.57884697396498E-65" />
+      <entry key="S10" value="5.0782349039454454E-33" />
+      <entry key="S30" value="1.7188484838069578E-11" />
+      <entry key="S60" value="4.145911550539465E-6" />
+      <entry key="M2" value="0.0020400803380963965" />
+      <entry key="M5" value="0.09359147923770719" />
+      <entry key="M10" value="0.4586118876770752" />
+      <entry key="M15" value="1.005284086955688" />
+      <entry key="M30" value="3.4199793106703202" />
+      <entry key="H1" value="8.12123716511689" />
+      <entry key="H2" value="13.38393103667426" />
+      <entry key="H4" value="17.45688851453198" />
+      <entry key="D1" value="21.951863703056436" />
+      <entry key="W1" value="22.84688033704965" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.564651343622333E-4" />
-      <entry key="MS500" value="0.248974459969874" />
-      <entry key="S2" value="0.7653705773610694" />
-      <entry key="S5" value="1.2228238313217275" />
-      <entry key="S10" value="1.7342823343714413" />
-      <entry key="S30" value="3.0939969618247196" />
-      <entry key="S60" value="4.301719673745653" />
-      <entry key="M2" value="5.6942508078653535" />
-      <entry key="M5" value="9.164771531717856" />
-      <entry key="M10" value="17.386661423795825" />
-      <entry key="M15" value="25.967712820448696" />
-      <entry key="M30" value="48.73663874058797" />
-      <entry key="H1" value="77.43122218329205" />
-      <entry key="H2" value="102.39028066610523" />
-      <entry key="H4" value="119.22988633034979" />
-      <entry key="D1" value="136.22460818519244" />
-      <entry key="W1" value="139.45237783375285" />
+      <entry key="MS100" value="0.8585654364377537" />
+      <entry key="MS500" value="0.9699619161148614" />
+      <entry key="S2" value="1.0011210881414823" />
+      <entry key="S5" value="1.146972016623806" />
+      <entry key="S10" value="1.3857968008390902" />
+      <entry key="S30" value="1.7285582943324491" />
+      <entry key="S60" value="1.866836494790854" />
+      <entry key="M2" value="2.122095496536656" />
+      <entry key="M5" value="3.5476669231356124" />
+      <entry key="M10" value="7.507689712253157" />
+      <entry key="M15" value="13.525951742058798" />
+      <entry key="M30" value="36.97633465062262" />
+      <entry key="H1" value="79.62511404509574" />
+      <entry key="H2" value="128.48740464238736" />
+      <entry key="H4" value="167.69596137604188" />
+      <entry key="D1" value="212.37717852647353" />
+      <entry key="W1" value="221.443456726953" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -126,10 +175,11 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "release/v1.0.0",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -137,7 +187,7 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "copyright",
+    "settings.editor.selected.configurable": "actions.on.save",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external"
   }
 }]]></component>
@@ -170,7 +220,25 @@
       <list>
         <option value="$PROJECT_DIR$/index.test.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.test.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="rename extension to my-extension and update metadata" />
+    <MESSAGE value="Rename and update starter extension to &quot;my-extension&quot;." />
+    <MESSAGE value="Update `my-extension`: replace old documentation, rename files, adjust metadata, and add TypeScript support." />
+    <MESSAGE value="Update extension to `my-extension`: rename, add documentation, and adjust metadata." />
+    <MESSAGE value="Update boilerplate to `my-extension`, adjusting metadata, documentation, and commands." />
+    <MESSAGE value="Update metadata, documentation, and project structure for `my-extension`. Drop unused files and add comprehensive guides for usage, development, and publishing." />
+    <MESSAGE value="feat: replace boilerplate content with my-extension setup&#10;&#10;- Removed outdated COMMUNITY.md and Antinote Boilerplate references.&#10;- Replaced extension metadata (`exchange_rates` → `my-extension`, version `0.0.1` → `1.0.0`).&#10;- Updated documentation files, including usage, API, development, and publishing guides.&#10;- Added `my-extension.iml` to `.idea` as part of the project setup.&#10;- Adjusted README to reflect my-extension's functionality and usage." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: replace boilerplate content with my-extension setup&#10;&#10;- Removed outdated COMMUNITY.md and Antinote Boilerplate references.&#10;- Replaced extension metadata (`exchange_rates` → `my-extension`, version `0.0.1` → `1.0.0`).&#10;- Updated documentation files, including usage, API, development, and publishing guides.&#10;- Added `my-extension.iml` to `.idea` as part of the project setup.&#10;- Adjusted README to reflect my-extension's functionality and usage." />
   </component>
 </project>

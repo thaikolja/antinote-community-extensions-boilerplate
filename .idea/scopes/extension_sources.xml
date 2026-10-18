@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="extension_sources" pattern="file[my-extension]:index.ts||file[my-extension]:antinote.d.ts" />
+</component>

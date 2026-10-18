@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="extension_tests" pattern="file[my-extension]:index.test.ts||file[my-extension]:test-env.d.ts" />
+</component>

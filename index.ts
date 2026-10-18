@@ -1,6 +1,6 @@
 /*
  * @file         Antinote Extension
- * @description  Boilerplate community extension for the macOS app Antinote.
+ * @description  my-extension, a community extension for the macOS app Antinote.
  * @author       Kolja Nolte <kolja.nolte@gmail.com>
  * @copyright    2026 (C) Kolja Nolte
  * @see          https://www.kolja-nolte.com
@@ -15,9 +15,9 @@
  */
 
 /**
- * Stable snake_case id for this extension. Must match the folder name and extension.json "name".
+ * Extension id for my-extension. Must match the folder name and extension.json "name".
  */
-var extensionName = 'boilerplate'
+var extensionName = 'my_extension'
 
 /**
  * Root Extension instance Antinote registers when it loads index.js.
@@ -25,7 +25,7 @@ var extensionName = 'boilerplate'
 var extensionRoot = new Extension({
   name:            extensionName,
   version:         '1.0.0',
-  endpoints:       [ 'https://60797dd9460a6600174fbd2d.mockapi.io/location_url' ],
+  endpoints:       [],
   requiredAPIKeys: [],
   author:          'Kolja Nolte',
   category:        'Utilities',

@@ -1,14 +1,12 @@
 {
-  "name":            "exchange_rates",
-  "version":         "0.0.1",
+  "name":            "my_extension",
+  "version":         "1.0.0",
   "author":          "Kolja Nolte",
-  "description":     "Provides current exchange rates for various currencies.",
+  "description":     "my-extension inserts a greeting and opens the Antinote extensions guide.",
   "license":         "MIT",
   "category":        "Utilities",
   "dataScope":       "none",
-  "endpoints":       [
-    "https://60797dd9460a6600174fbd2d.mockapi.io/location_url"
-  ],
+  "endpoints":       [],
   "requiredAPIKeys": [],
   "official":        false,
   "commands":        [
@@ -18,9 +16,9 @@
       "type":        "insert"
     },
     {
-      "name":        "rate",
-      "description": "rate description",
-      "type":        "insert"
+      "name":        "open_docs",
+      "description": "Open the Antinote extensions guide.",
+      "type":        "openURL"
     }
   ]
 }
