@@ -21,18 +21,8 @@
     <option name="selectedModelId" value="mai-code-1.1-flash" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19835a11-fe44-4936-aa61-76209a4c4571" name="Changes" comment="feat: rename extension to my_extension and update metadata&#10;&#10;- Changed extension name from `my-extension` to `my_extension`.&#10;- Cleared unused endpoints in extension metadata.&#10;- Reformatted tsconfig files for consistency.&#10;- Added documentation for `require` in test environment.">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="19835a11-fe44-4936-aa61-76209a4c4571" name="Changes" comment="feat: update project setup and metadata for my_extension  &#10;&#10;- Updated extension name format (`my-extension` → `my_extension`) in code and metadata.  &#10;- Adjusted `extension.json` to remove unnecessary endpoints and align metadata with project scope.  &#10;- Added IntelliJ scope files for sources and tests (`extension_sources` and `extension_tests`).  &#10;- Enhanced TypeScript configuration (`tsconfig.json` and `tsconfig.test.json`) for output settings and compatibility.  &#10;- Introduced new file watcher tasks for source and test compilation in `.idea/watcherTasks.xml`.  &#10;- Improved documentation to reflect updated build process and metadata changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOCUMENTATION/DEVELOPMENT.md" beforeDir="false" afterPath="$PROJECT_DIR$/DOCUMENTATION/DEVELOPMENT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antinote.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/antinote.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/extension.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.test.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.test.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,67 +72,70 @@
     &quot;accountId&quot;: &quot;e47629df-5fd8-48d0-bb71-e9da6b8e1e09&quot;
   }
 }</component>
+  <component name="MaliciousPackageCheckinHandlerState">
+    <option name="packageCheck" value="true" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000059767153" />
-      <entry key="S2" value="1.0087925661548605" />
-      <entry key="S5" value="1.1505380402110925" />
-      <entry key="S10" value="1.38799231978584" />
-      <entry key="S30" value="1.7294895187112203" />
-      <entry key="S60" value="1.8674161368168103" />
-      <entry key="M2" value="2.1207308535211546" />
-      <entry key="M5" value="3.455243471357391" />
-      <entry key="M10" value="7.05092410786872" />
-      <entry key="M15" value="12.52327143845333" />
-      <entry key="M30" value="33.56145856699639" />
-      <entry key="H1" value="71.5107972757598" />
-      <entry key="H2" value="115.10960479037746" />
-      <entry key="H4" value="150.24322081115153" />
-      <entry key="D1" value="190.42621117521674" />
-      <entry key="W1" value="198.59671036138985" />
+      <entry key="MS100" value="1.000000000034372" />
+      <entry key="MS500" value="1.0090194841377869" />
+      <entry key="S2" value="1.5208729150046032" />
+      <entry key="S5" value="2.532620433487722" />
+      <entry key="S10" value="3.394826240229422" />
+      <entry key="S30" value="4.343773083650614" />
+      <entry key="S60" value="4.653700852170855" />
+      <entry key="M2" value="4.841856833868377" />
+      <entry key="M5" value="5.226169337554076" />
+      <entry key="M10" value="6.557765498815898" />
+      <entry key="M15" value="9.279676276131717" />
+      <entry key="M30" value="24.026979879233572" />
+      <entry key="H1" value="58.631900565847644" />
+      <entry key="H2" value="104.80721414318789" />
+      <entry key="H4" value="145.2111534869291" />
+      <entry key="D1" value="194.02298941250606" />
+      <entry key="W1" value="204.23675287703455" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.37725560267668E-162" />
-      <entry key="S5" value="2.57884697396498E-65" />
-      <entry key="S10" value="5.0782349039454454E-33" />
-      <entry key="S30" value="1.7188484838069578E-11" />
-      <entry key="S60" value="4.145911550539465E-6" />
-      <entry key="M2" value="0.0020400803380963965" />
-      <entry key="M5" value="0.09359147923770719" />
-      <entry key="M10" value="0.4586118876770752" />
-      <entry key="M15" value="1.005284086955688" />
-      <entry key="M30" value="3.4199793106703202" />
-      <entry key="H1" value="8.12123716511689" />
-      <entry key="H2" value="13.38393103667426" />
-      <entry key="H4" value="17.45688851453198" />
-      <entry key="D1" value="21.951863703056436" />
-      <entry key="W1" value="22.84688033704965" />
+      <entry key="S2" value="2.4989224890179695E-107" />
+      <entry key="S5" value="2.286131007681755E-43" />
+      <entry key="S10" value="4.78135023574069E-22" />
+      <entry key="S30" value="7.819581654295033E-8" />
+      <entry key="S60" value="2.796351490256232E-4" />
+      <entry key="M2" value="0.016722517674349777" />
+      <entry key="M5" value="0.19711350440537762" />
+      <entry key="M10" value="0.5151952406723699" />
+      <entry key="M15" value="0.877445035314174" />
+      <entry key="M30" value="2.622936052237334" />
+      <entry key="H1" value="6.8643374973689095" />
+      <entry key="H2" value="12.43022252953963" />
+      <entry key="H4" value="17.145453665821748" />
+      <entry key="D1" value="22.669814964151193" />
+      <entry key="W1" value="23.804752406849474" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8585654364377537" />
-      <entry key="MS500" value="0.9699619161148614" />
-      <entry key="S2" value="1.0011210881414823" />
-      <entry key="S5" value="1.146972016623806" />
-      <entry key="S10" value="1.3857968008390902" />
-      <entry key="S30" value="1.7285582943324491" />
-      <entry key="S60" value="1.866836494790854" />
-      <entry key="M2" value="2.122095496536656" />
-      <entry key="M5" value="3.5476669231356124" />
-      <entry key="M10" value="7.507689712253157" />
-      <entry key="M15" value="13.525951742058798" />
-      <entry key="M30" value="36.97633465062262" />
-      <entry key="H1" value="79.62511404509574" />
-      <entry key="H2" value="128.48740464238736" />
-      <entry key="H4" value="167.69596137604188" />
-      <entry key="D1" value="212.37717852647353" />
-      <entry key="W1" value="221.443456726953" />
+      <entry key="MS100" value="1.6150466432089176E-6" />
+      <entry key="MS500" value="0.07554332693087708" />
+      <entry key="S2" value="0.8949614430197654" />
+      <entry key="S5" value="2.0494791086436788" />
+      <entry key="S10" value="3.04870008850574" />
+      <entry key="S30" value="4.1894328562481435" />
+      <entry key="S60" value="4.570394087915368" />
+      <entry key="M2" value="4.813996586111413" />
+      <entry key="M5" value="5.400796095015364" />
+      <entry key="M10" value="7.058575437913875" />
+      <entry key="M15" value="10.145916440005786" />
+      <entry key="M30" value="26.641245755249756" />
+      <entry key="H1" value="65.48798112390675" />
+      <entry key="H2" value="117.23053825302819" />
+      <entry key="H4" value="162.35193200341263" />
+      <entry key="D1" value="216.6917787135481" />
+      <entry key="W1" value="228.0413514166162" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -239,6 +232,8 @@
     <MESSAGE value="Update boilerplate to `my-extension`, adjusting metadata, documentation, and commands." />
     <MESSAGE value="Update metadata, documentation, and project structure for `my-extension`. Drop unused files and add comprehensive guides for usage, development, and publishing." />
     <MESSAGE value="feat: replace boilerplate content with my-extension setup&#10;&#10;- Removed outdated COMMUNITY.md and Antinote Boilerplate references.&#10;- Replaced extension metadata (`exchange_rates` → `my-extension`, version `0.0.1` → `1.0.0`).&#10;- Updated documentation files, including usage, API, development, and publishing guides.&#10;- Added `my-extension.iml` to `.idea` as part of the project setup.&#10;- Adjusted README to reflect my-extension's functionality and usage." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: replace boilerplate content with my-extension setup&#10;&#10;- Removed outdated COMMUNITY.md and Antinote Boilerplate references.&#10;- Replaced extension metadata (`exchange_rates` → `my-extension`, version `0.0.1` → `1.0.0`).&#10;- Updated documentation files, including usage, API, development, and publishing guides.&#10;- Added `my-extension.iml` to `.idea` as part of the project setup.&#10;- Adjusted README to reflect my-extension's functionality and usage." />
+    <MESSAGE value="feat: rename extension to my_extension and update metadata&#10;&#10;- Changed extension name from `my-extension` to `my_extension`.&#10;- Cleared unused endpoints in extension metadata.&#10;- Reformatted tsconfig files for consistency.&#10;- Added documentation for `require` in test environment." />
+    <MESSAGE value="feat: update project setup and metadata for my_extension  &#10;&#10;- Updated extension name format (`my-extension` → `my_extension`) in code and metadata.  &#10;- Adjusted `extension.json` to remove unnecessary endpoints and align metadata with project scope.  &#10;- Added IntelliJ scope files for sources and tests (`extension_sources` and `extension_tests`).  &#10;- Enhanced TypeScript configuration (`tsconfig.json` and `tsconfig.test.json`) for output settings and compatibility.  &#10;- Introduced new file watcher tasks for source and test compilation in `.idea/watcherTasks.xml`.  &#10;- Improved documentation to reflect updated build process and metadata changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update project setup and metadata for my_extension  &#10;&#10;- Updated extension name format (`my-extension` → `my_extension`) in code and metadata.  &#10;- Adjusted `extension.json` to remove unnecessary endpoints and align metadata with project scope.  &#10;- Added IntelliJ scope files for sources and tests (`extension_sources` and `extension_tests`).  &#10;- Enhanced TypeScript configuration (`tsconfig.json` and `tsconfig.test.json`) for output settings and compatibility.  &#10;- Introduced new file watcher tasks for source and test compilation in `.idea/watcherTasks.xml`.  &#10;- Improved documentation to reflect updated build process and metadata changes." />
   </component>
 </project>
