@@ -1,6 +1,6 @@
 /*
  * @file         Antinote Extension
- * @description  Boilerplate community extension for the macOS app Antinote.
+ * @description  my-extension, a community extension for the macOS app Antinote.
  * @author       Kolja Nolte <kolja.nolte@gmail.com>
  * @copyright    2026 (C) Kolja Nolte
  * @see          https://www.kolja-nolte.com
@@ -588,15 +588,15 @@ var metadata = JSON.parse(fs.readFileSync(path.join(__dirname, 'extension.json')
 /**
  * Suite: required extension.json fields and catalog constraints.
  */
-describe('Boilerplate extension metadata', function () {
+describe('my-extension metadata', function () {
   /**
    * Case: every field Antinote's validator requires is present and typed.
    */
   it('has the fields Antinote\'s validator requires', function () {
     /**
-     * Extension id must match the boilerplate name used in index.js.
+     * Extension id must be my-extension, matching index.js.
      */
-    expect(metadata.name).toBe('boilerplate')
+    expect(metadata.name).toBe('my-extension')
 
     /**
      * Version must match the Extension constructor version.
@@ -614,17 +614,17 @@ describe('Boilerplate extension metadata', function () {
     expect(metadata.description).toBeDefined()
 
     /**
-     * License must be MIT for this boilerplate.
+     * License field in extension.json is MIT.
      */
     expect(metadata.license).toBe('MIT')
 
     /**
-     * Category must be Utilities for this boilerplate.
+     * Category is Utilities.
      */
     expect(metadata.category).toBe('Utilities')
 
     /**
-     * This boilerplate does not read note text.
+     * my-extension does not read note text.
      */
     expect(metadata.dataScope).toBe('none')
 
